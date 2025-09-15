@@ -1,0 +1,2 @@
+SELECT security_question FROM users 
+WHERE username = '{{ResetUsernameInput.text}}';

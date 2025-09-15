@@ -1,0 +1,67 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignment": "left",
+  "animateLoading": true,
+  "bottomRow": 53,
+  "boxShadow": "none",
+  "defaultOptionValue": "6",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onSelectionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSelectionChange"
+    }
+  ],
+  "flexVerticalAlignment": "start",
+  "isDisabled": false,
+  "isInline": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "hwmrtgqk86",
+  "label": "Re-calibration Duration",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 30,
+  "mobileLeftColumn": 14,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 24,
+  "needsErrorInfo": false,
+  "onSelectionChange": "{{ CalibrationWiring.updateNextCalibration() }}",
+  "options": [
+    {
+      "label": "6 Months ",
+      "value": "6"
+    },
+    {
+      "label": "12 Months",
+      "value": "12"
+    }
+  ],
+  "originalBottomRow": 53,
+  "originalTopRow": 47,
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 15,
+  "topRow": 47,
+  "type": "RADIO_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "v0pgs8cek3",
+  "widgetName": "CalibrationRadio"
+}

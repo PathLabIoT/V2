@@ -1,0 +1,15 @@
+SELECT
+  sd.ID        AS SensorKey,
+  sd.Timestamp,
+  sd.Value
+FROM SensorData sd
+JOIN Sensor s ON s.HardwareName = sd.ID
+WHERE s.Active = 1
+  AND '{{ LabSelect.selectedOptionValue || "" }}' <> ''   -- require Lab
+  AND s.Lab = '{{ LabSelect.selectedOptionValue }}'
+  AND (
+        '{{ DeptSelect.selectedOptionValue || "ALL" }}' = 'ALL'
+        OR s.Department = '{{ DeptSelect.selectedOptionValue }}'
+      )
+  AND sd.Timestamp >= NOW() - INTERVAL 24 HOUR
+ORDER BY sd.Timestamp ASC;

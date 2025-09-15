@@ -1,0 +1,21 @@
+SELECT
+  s.HardwareName AS SensorKey,
+  sd.Value,
+  sd.Timestamp
+FROM Sensor s
+JOIN (
+  SELECT ID, MAX(Timestamp) AS MaxTs
+  FROM SensorData
+  GROUP BY ID
+) mx
+  ON mx.ID = s.HardwareName
+JOIN SensorData sd
+  ON sd.ID = mx.ID AND sd.Timestamp = mx.MaxTs
+WHERE s.Active = 1
+  AND '{{ LabSelect.selectedOptionValue || "" }}' <> ''   -- require Lab
+  AND s.Lab = '{{ LabSelect.selectedOptionValue }}'
+  AND (
+        '{{ DeptSelect.selectedOptionValue || "ALL" }}' = 'ALL'
+        OR s.Department = '{{ DeptSelect.selectedOptionValue }}'
+      )
+ORDER BY s.HardwareName;

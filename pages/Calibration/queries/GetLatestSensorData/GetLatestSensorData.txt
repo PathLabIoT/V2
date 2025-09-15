@@ -1,0 +1,6 @@
+SELECT Serial, Value, Timestamp
+FROM SensorData
+WHERE ID  = '{{ HardwareById.data[0]?.HardwareName }}'
+  AND Lab = '{{ HardwareById.data[0]?.LOC }}'
+ORDER BY Timestamp DESC
+LIMIT 1;

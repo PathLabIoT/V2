@@ -1,0 +1,16 @@
+SELECT 
+  ID,
+  HardwareName,
+  Type,
+  Location,
+  Lab,
+  Department,
+  AlertEmail,
+  Low,
+  High,
+  Units,
+  Calibration,
+  Due,
+  Active
+FROM Sensor
+ORDER BY HardwareName ASC;

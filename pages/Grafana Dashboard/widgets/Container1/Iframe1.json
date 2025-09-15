@@ -1,0 +1,41 @@
+{
+  "animateLoading": true,
+  "borderOpacity": 100,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": 1,
+  "bottomRow": 98,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "start",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "twd55g5pi5",
+  "leftColumn": 19,
+  "mobileBottomRow": 38,
+  "mobileLeftColumn": 28,
+  "mobileRightColumn": 52,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "originalBottomRow": 160,
+  "originalTopRow": 125,
+  "parentColumnSpace": 14.02685546875,
+  "parentId": "59rw5mx0bq",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 59,
+  "source": "http://192.168.1.101:3000/grafana/d/fde675a0-1897-4c5f-bec8-4a3f7af79104/freezer2?orgId=1&from=now-12h&to=now&timezone=browser&refresh=10s&theme=light",
+  "topRow": 16,
+  "type": "IFRAME_WIDGET",
+  "version": 1,
+  "widgetId": "xq13cy0450",
+  "widgetName": "Iframe1"
+}

@@ -1,0 +1,8 @@
+SELECT
+  Lab,
+  Location,
+  HardwareName,
+  ID
+FROM Sensor
+WHERE Active = 1
+ORDER BY Lab, Location, HardwareName;

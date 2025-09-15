@@ -1,0 +1,5 @@
+SELECT DISTINCT Serial
+FROM SensorData
+WHERE ID = {{ TreeSelect1.selectedOptionValue }}
+ORDER BY Timestamp DESC
+LIMIT 1;

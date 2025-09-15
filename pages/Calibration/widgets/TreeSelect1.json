@@ -1,0 +1,68 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "allowClear": false,
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "options"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "expandAll": false,
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "tn00wpf0jz",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Select Lab, Dept and Asset",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 16,
+  "mobileTopRow": 11,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{ CalibrationWiring.onAssetChange() }}\n",
+  "options": "{{\n(() => {\n  const rows = QueryLabDeptAsset1.data || [];\n  // Group by Lab → Location\n  const byLab = {};\n  rows.forEach(r => {\n    const labKey = String(r.Lab);\n    if (!byLab[labKey]) byLab[labKey] = {};\n    if (!byLab[labKey][r.Location]) byLab[labKey][r.Location] = [];\n    byLab[labKey][r.Location].push({\n      label: r.HardwareName,\n      // leaf nodes carry the Hardware ID so we can filter precisely\n      value: `hw:${r.ID}`\n    });\n  });\n\n  // Build TreeSelect structure\n  return Object.entries(byLab).map(([lab, locs]) => ({\n    label: `Lab ${lab}`,\n    value: `lab:${lab}`,\n    children: Object.entries(locs).map(([loc, items]) => ({\n      label: loc,\n      value: `loc:${lab}:${loc}`,\n      children: items\n    }))\n  }));\n})()\n}}\n",
+  "originalBottomRow": 11,
+  "originalTopRow": 4,
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Select Asset",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 13,
+  "shouldScrollContents": true,
+  "topRow": 4,
+  "type": "SINGLE_SELECT_TREE_WIDGET",
+  "version": 1,
+  "widgetId": "djyfgj3ymm",
+  "widgetName": "TreeSelect1"
+}

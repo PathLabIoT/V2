@@ -1,0 +1,7 @@
+SELECT
+  ID,
+  HardwareName,
+  LOC,
+  LastCalib
+FROM Sensor
+WHERE ID = {{ CalibrationWiring.hwId() }};

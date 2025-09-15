@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "687b51105b01a1400c4091fd_e5879571-b89d-4937-bdd2-0bd271d4b41a",
+  "id": "Calibration_CalibrationWiring",
+  "unpublishedCollection": {
+    "name": "CalibrationWiring",
+    "pageId": "Calibration",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "dueIsDateOnly",
+        "value": "true"
+      }
+    ]
+  }
+}

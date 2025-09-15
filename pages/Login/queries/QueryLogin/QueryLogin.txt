@@ -1,0 +1,3 @@
+SELECT * FROM users 
+WHERE username = '{{UsernameInput.text}}' 
+AND password = '{{PasswordInput.text}}';
