@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 47,
+  "bottomRow": 53,
   "boxShadow": "none",
   "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
@@ -53,7 +53,7 @@
   "rightColumn": 42,
   "serverSideFiltering": false,
   "sourceData": "[\n\t{\n    \"name\": \"All\",\n    \"code\": \"All\"\n  },\n  {\n    \"name\": \"Biochemistry\",\n    \"code\": \"Biochemistry\"\n  },\n  {\n    \"name\": \"Cytology\",\n    \"code\": \"Cytology\"\n  },\n  {\n    \"name\": \"Haematology\",\n    \"code\": \"Haematology\"\n  },\n\t{\n    \"name\": \"Microbiology\",\n    \"code\": \"Microbiology\"\n  },\n\t{\n    \"name\": \"Molecular\",\n    \"code\": \"Molecular\"\n  },\n\t{\n    \"name\": \"Histology\",\n    \"code\": \"Histology\"\n  },\n\t{\n    \"name\": \"Immunology\",\n    \"code\": \"Immunology\"\n  },\n\t{\n    \"name\": \"Specimen Services\",\n    \"code\": \"Specimen Services\"\n  },\n\t{\n    \"name\": \"Transfusion\",\n    \"code\": \"Transfusion\"\n  },\n\t{\n    \"name\": \"Information Services\",\n    \"code\": \"Information Services\"\n  }\n]",
-  "topRow": 40,
+  "topRow": 46,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "af3htric0w",

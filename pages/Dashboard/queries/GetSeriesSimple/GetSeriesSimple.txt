@@ -1,7 +1,8 @@
 SELECT
   sd.ID        AS SensorKey,
   sd.Timestamp,
-  sd.Value
+  sd.Value,
+  s.Lab        AS Lab
 FROM SensorData sd
 JOIN Sensor s ON s.HardwareName = sd.ID
 WHERE s.Active = 1
@@ -13,3 +14,4 @@ WHERE s.Active = 1
       )
   AND sd.Timestamp >= NOW() - INTERVAL 24 HOUR
 ORDER BY sd.Timestamp ASC;
+

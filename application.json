@@ -42,10 +42,6 @@
       "isDefault": false
     },
     {
-      "id": "Grafana Dashboard",
-      "isDefault": false
-    },
-    {
       "id": "Calibration",
       "isDefault": false
     },

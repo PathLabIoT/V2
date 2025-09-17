@@ -1,6 +1,0 @@
-SELECT DISTINCT Department
-FROM Sensor
-WHERE Active = 1
-  AND Lab = '{{ JS_Dash.lab() }}'
-  AND Department <> ''
-ORDER BY Department;

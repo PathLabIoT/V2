@@ -1,7 +1,8 @@
 SELECT
   s.HardwareName AS SensorKey,
   sd.Value,
-  sd.Timestamp
+  sd.Timestamp,
+	s.Lab
 FROM Sensor s
 JOIN (
   SELECT ID, MAX(Timestamp) AS MaxTs

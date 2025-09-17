@@ -1,8 +1,8 @@
 SELECT
   sd.ID          AS SensorKey,
   sd.Timestamp,
-  sd.Value
-	sd.Lab				AS lab
+  sd.Value,
+	sd.Lab				AS Locationab
 FROM SensorData sd
 JOIN Sensor s
   ON s.HardwareName = sd.ID

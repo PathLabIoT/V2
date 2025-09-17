@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "687b51105b01a1400c4091fd_8af58595-d81e-4bbd-9bfd-a378af6f5c85",
+  "gitSyncId": "687b51105b01a1400c4091fd_8ff3b925-e923-4340-80ad-287e4e47b23c",
   "id": "Dashboard_GetLatestSimple",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  s.HardwareName AS SensorKey,\n  sd.Value,\n  sd.Timestamp\nFROM Sensor s\nJOIN (\n  SELECT ID, MAX(Timestamp) AS MaxTs\n  FROM SensorData\n  GROUP BY ID\n) mx\n  ON mx.ID = s.HardwareName\nJOIN SensorData sd\n  ON sd.ID = mx.ID AND sd.Timestamp = mx.MaxTs\nWHERE s.Active = 1\n  AND '{{ LabSelect.selectedOptionValue || \"\" }}' <> ''   -- require Lab\n  AND s.Lab = '{{ LabSelect.selectedOptionValue }}'\n  AND (\n        '{{ DeptSelect.selectedOptionValue || \"ALL\" }}' = 'ALL'\n        OR s.Department = '{{ DeptSelect.selectedOptionValue }}'\n      )\nORDER BY s.HardwareName;\n",
+      "body": "SELECT\n  s.HardwareName AS SensorKey,\n  sd.Value,\n  sd.Timestamp,\n\ts.Lab\nFROM Sensor s\nJOIN (\n  SELECT ID, MAX(Timestamp) AS MaxTs\n  FROM SensorData\n  GROUP BY ID\n) mx\n  ON mx.ID = s.HardwareName\nJOIN SensorData sd\n  ON sd.ID = mx.ID AND sd.Timestamp = mx.MaxTs\nWHERE s.Active = 1\n  AND '{{ LabSelect.selectedOptionValue || \"\" }}' <> ''   -- require Lab\n  AND s.Lab = '{{ LabSelect.selectedOptionValue }}'\n  AND (\n        '{{ DeptSelect.selectedOptionValue || \"ALL\" }}' = 'ALL'\n        OR s.Department = '{{ DeptSelect.selectedOptionValue }}'\n      )\nORDER BY s.HardwareName;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

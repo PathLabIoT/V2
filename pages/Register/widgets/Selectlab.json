@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 38,
+  "bottomRow": 44,
   "boxShadow": "none",
   "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
@@ -53,7 +53,7 @@
   "rightColumn": 42,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"Waikato\",\n    \"code\": \"Waikato\"\n  },\n  {\n    \"name\": \"Taupo\",\n    \"code\": \"Taupo\"\n  },\n  {\n    \"name\": \"Rotorua\",\n    \"code\": \"Rotorua\"\n  },\n\t{\n    \"name\": \"Whakatane\",\n    \"code\": \"Whakatane\"\n  },\n\t{\n    \"name\": \"Tauranga\",\n    \"code\": \"Tauranga\"\n  }\n]",
-  "topRow": 31,
+  "topRow": 37,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "0gugn9boco",

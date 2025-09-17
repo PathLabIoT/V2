@@ -1,4 +1,0 @@
-SELECT DISTINCT Lab
-FROM Sensor
-WHERE Active = 1 AND Lab <> ''
-ORDER BY Lab;

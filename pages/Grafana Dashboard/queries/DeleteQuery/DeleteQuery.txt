@@ -1,2 +1,0 @@
-DELETE FROM SensorData
-  WHERE Index = {{data_table.triggeredRow.Index}};

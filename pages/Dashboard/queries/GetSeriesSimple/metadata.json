@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "687b51105b01a1400c4091fd_76a78ac5-2182-473b-b41c-9822c600a815",
+  "gitSyncId": "687b51105b01a1400c4091fd_83181d09-0ae1-4744-af52-548b20f027ee",
   "id": "Dashboard_GetSeriesSimple",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  sd.ID        AS SensorKey,\n  sd.Timestamp,\n  sd.Value\nFROM SensorData sd\nJOIN Sensor s ON s.HardwareName = sd.ID\nWHERE s.Active = 1\n  AND '{{ LabSelect.selectedOptionValue || \"\" }}' <> ''   -- require Lab\n  AND s.Lab = '{{ LabSelect.selectedOptionValue }}'\n  AND (\n        '{{ DeptSelect.selectedOptionValue || \"ALL\" }}' = 'ALL'\n        OR s.Department = '{{ DeptSelect.selectedOptionValue }}'\n      )\n  AND sd.Timestamp >= NOW() - INTERVAL 24 HOUR\nORDER BY sd.Timestamp ASC;\n",
+      "body": "SELECT\n  sd.ID        AS SensorKey,\n  sd.Timestamp,\n  sd.Value,\n  s.Lab        AS Lab\nFROM SensorData sd\nJOIN Sensor s ON s.HardwareName = sd.ID\nWHERE s.Active = 1\n  AND '{{ LabSelect.selectedOptionValue || \"\" }}' <> ''   -- require Lab\n  AND s.Lab = '{{ LabSelect.selectedOptionValue }}'\n  AND (\n        '{{ DeptSelect.selectedOptionValue || \"ALL\" }}' = 'ALL'\n        OR s.Department = '{{ DeptSelect.selectedOptionValue }}'\n      )\n  AND sd.Timestamp >= NOW() - INTERVAL 24 HOUR\nORDER BY sd.Timestamp ASC;\n\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -29,7 +29,7 @@
     ],
     "name": "GetSeriesSimple",
     "pageId": "Dashboard",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

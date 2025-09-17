@@ -1,4 +1,0 @@
-SELECT * FROM SensorData
-WHERE ID = 'freezer1'
-ORDER BY timestamp DESC
-LIMIT 1;
