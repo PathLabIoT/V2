@@ -1,9 +1,9 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 8,
+  "bottomRow": 11,
   "boxShadow": "none",
-  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "defaultImage": "https://raw.githubusercontent.com/PathLabIoT/PAM_Assets/main/temperature%20small.png\n",
   "dynamicBindingPathList": [
     {
       "key": "image"
@@ -31,7 +31,7 @@
   "objectFit": "cover",
   "parentId": "d9tgut74u4",
   "renderMode": "CANVAS",
-  "rightColumn": 23,
+  "rightColumn": 21,
   "topRow": 0,
   "type": "IMAGE_WIDGET",
   "version": 1,
