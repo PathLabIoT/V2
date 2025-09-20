@@ -69,7 +69,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 54,
   "serverSideFiltering": false,
-  "sourceData": "{{\n  (GetDepts.data || []).map(r => ({ label: r.Department, value: r.Department }))\n}}\n\n",
+  "sourceData": "{{\n  [{label: \"ALL\", value: \"ALL\"}]\n    .concat((GetDepts.data || []).map(r => ({ label: r.Dept, value: r.Dept })))\n}}\n\n",
   "topRow": 6,
   "type": "SELECT_WIDGET",
   "version": 1,

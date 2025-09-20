@@ -109,7 +109,7 @@
   "itemSpacing": 8,
   "key": "ksdltrpzqx",
   "leftColumn": 1,
-  "listData": "{{ GetLatestSimple.data || [] }}\n",
+  "listData": "{{\n  (LabSelect.selectedOptionValue)\n    ? GetLatestPerSensor.data\n    : []   // keep it empty until Lab chosen\n}}\n\n",
   "mainCanvasId": "dufh6puc03",
   "mainContainerId": "m4xd30sx3y",
   "minWidth": 450,

@@ -1,4 +1,4 @@
 SELECT DISTINCT Lab
-FROM Sensor
-WHERE Active = 1 AND Lab <> ''
+FROM SensorData
+WHERE Lab IS NOT NULL AND Lab <> ''
 ORDER BY Lab;

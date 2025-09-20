@@ -5,12 +5,12 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT DISTINCT Department\nFROM Sensor\nWHERE Active = 1\n  AND Lab = '{{ JS_Dash.lab() }}'\n  AND Department <> ''\nORDER BY Department;\n",
+      "body": "SELECT DISTINCT Dept\nFROM SensorData\nWHERE Lab = '{{ LabSelect.selectedOptionValue || \"\" }}'\n  AND Dept IS NOT NULL AND Dept <> ''\nORDER BY Dept;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000

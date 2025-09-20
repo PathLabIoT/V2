@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 59,
   "shouldTruncate": false,
-  "text": "{{ currentItem.SensorKey || '—' }}\n",
+  "text": "{{ currentItem.ID || '—' }}\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "textStyle": "HEADING",

@@ -5,12 +5,12 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT DISTINCT Lab\nFROM Sensor\nWHERE Active = 1 AND Lab <> ''\nORDER BY Lab;\n",
+      "body": "SELECT DISTINCT Lab\nFROM SensorData\nWHERE Lab IS NOT NULL AND Lab <> ''\nORDER BY Lab;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000

@@ -1,6 +1,5 @@
-SELECT DISTINCT Department
-FROM Sensor
-WHERE Active = 1
-  AND Lab = '{{ JS_Dash.lab() }}'
-  AND Department <> ''
-ORDER BY Department;
+SELECT DISTINCT Dept
+FROM SensorData
+WHERE Lab = '{{ LabSelect.selectedOptionValue || "" }}'
+  AND Dept IS NOT NULL AND Dept <> ''
+ORDER BY Dept;
