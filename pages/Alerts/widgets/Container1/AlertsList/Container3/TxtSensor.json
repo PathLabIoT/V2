@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 7,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -23,7 +23,7 @@
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontSize": "1.25rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
@@ -41,10 +41,10 @@
   "parentId": "7gdijvubmp",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 34,
+  "rightColumn": 38,
   "shouldTruncate": false,
   "text": "{{ currentItem.SensorId }}",
-  "textAlign": "LEFT",
+  "textAlign": "CENTER",
   "textColor": "#231F20",
   "textStyle": "HEADING",
   "topRow": 0,
