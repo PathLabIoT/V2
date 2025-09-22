@@ -7,14 +7,14 @@
     "metaWidgetId"
   ],
   "animateLoading": true,
-  "backgroundColor": "{{ currentItem.SensorKey === appsmith.store.selectedSensor ? \"#0b1220\" : \"\" }}\n",
+  "backgroundColor": "transparent",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 86,
+  "bottomRow": 90,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 740,
+      "bottomRow": 850,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -32,7 +32,7 @@
       "flexLayers": [],
       "isLoading": false,
       "isVisible": true,
-      "key": "7c6ie2kl7h",
+      "key": "6ltk71zi44",
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
@@ -40,22 +40,22 @@
       "minWidth": 450,
       "mobileBottomRow": 400,
       "mobileLeftColumn": 0,
-      "mobileRightColumn": 369.1875,
+      "mobileRightColumn": 438.28125,
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "noPad": true,
       "openParentPropertyPane": true,
       "parentColumnSpace": 1,
-      "parentId": "xgdkyq97wu",
+      "parentId": "2e7bc24mm6",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
-      "rightColumn": 369.1875,
+      "rightColumn": 438.28125,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "dufh6puc03",
-      "widgetName": "Canvas6"
+      "widgetId": "ns2o6q93nw",
+      "widgetName": "Canvas8"
     }
   ],
   "currentItemsView": "{{[]}}",
@@ -70,6 +70,9 @@
       "key": "triggeredItemView"
     },
     {
+      "key": "primaryKeys"
+    },
+    {
       "key": "accentColor"
     },
     {
@@ -80,24 +83,9 @@
     },
     {
       "key": "listData"
-    },
-    {
-      "key": "backgroundColor"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "onItemClick"
-    },
-    {
-      "key": "backgroundColor"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onItemClick"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "enhancements": true,
   "flexVerticalAlignment": "start",
   "gridType": "vertical",
@@ -106,34 +94,35 @@
   "isLoading": false,
   "isVisible": true,
   "itemBackgroundColor": "#FFFFFF",
-  "itemSpacing": 8,
-  "key": "ksdltrpzqx",
-  "leftColumn": 1,
-  "listData": "{{\n  (LabSelect.selectedOptionValue)\n    ? GetLatestPerSensor.data\n    : []   // keep it empty until Lab chosen\n}}\n\n",
-  "mainCanvasId": "dufh6puc03",
-  "mainContainerId": "m4xd30sx3y",
+  "itemSpacing": "12",
+  "key": "4fx3pbcddi",
+  "leftColumn": 2,
+  "listData": "{{ getOpenAlerts.data }}\n",
+  "mainCanvasId": "ns2o6q93nw",
+  "mainContainerId": "hqywq7aedf",
   "minWidth": 450,
-  "mobileBottomRow": 54,
-  "mobileLeftColumn": 4,
-  "mobileRightColumn": 28,
-  "mobileTopRow": 14,
+  "mobileBottomRow": 64,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 24,
   "needsErrorInfo": false,
-  "onItemClick": "{{ storeValue('selectedSensor', currentItem.SensorKey) }}\n",
-  "originalBottomRow": 72,
-  "originalTopRow": 16,
+  "originalBottomRow": 90,
+  "originalTopRow": 24,
   "pageSize": 2,
-  "parentColumnSpace": 15.3828125,
+  "parentColumnSpace": 18.26171875,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
+  "primaryKeys": "{{AlertsList.listData.map((currentItem, currentIndex) => currentItem[\"AlertId\"] )}}",
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 16,
+  "rightColumn": 61,
   "selectedItemView": "{{{}}}",
+  "serverSidePagination": false,
   "templateHeight": 160,
-  "topRow": 12,
+  "topRow": 5,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
-  "widgetId": "xgdkyq97wu",
-  "widgetName": "ListValues"
+  "widgetId": "2e7bc24mm6",
+  "widgetName": "AlertsList"
 }

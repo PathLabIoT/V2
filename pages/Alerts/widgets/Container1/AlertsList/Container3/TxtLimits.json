@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 11,
+  "bottomRow": 17,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,42 +11,43 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
-  "fontStyle": "",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "dfx8q7cist",
-  "leftColumn": 2,
+  "key": "2frjvhjpef",
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
   "mobileBottomRow": 17,
-  "mobileLeftColumn": 4,
-  "mobileRightColumn": 20,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 18,
   "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "originalBottomRow": 11,
-  "originalTopRow": 7,
   "overflow": "NONE",
-  "parentColumnSpace": 15.3828125,
-  "parentId": "59rw5mx0bq",
+  "parentColumnSpace": 6.41064453125,
+  "parentId": "7gdijvubmp",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 11,
+  "rightColumn": 40,
   "shouldTruncate": false,
-  "text": "Select Lab and Dept",
+  "text": "{{ \n  (currentItem.MinAtOpen != null ? 'Min ' + currentItem.MinAtOpen + '°C  ·  ' : '') +\n  (currentItem.MaxAtOpen != null ? 'Max ' + currentItem.MaxAtOpen + '°C' : '')\n}}\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 7,
+  "topRow": 13,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "5l9bd8apv8",
-  "widgetName": "InfoText"
+  "widgetId": "a3kai1v5f6",
+  "widgetName": "TxtLimits"
 }

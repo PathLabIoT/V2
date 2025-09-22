@@ -1,0 +1,4 @@
+{
+  "SensorId": "{{this.params.sensorId}}",
+  "seconds": {{this.params.seconds}}
+}

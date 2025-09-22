@@ -1,0 +1,13 @@
+SELECT
+  AlertId,
+  SensorId,
+  Status,           -- 'OPEN' | 'ACK'
+  OpenedAt,
+  AdjustedAtOpen,
+  MinAtOpen,
+  MaxAtOpen,
+  SnoozedUntil,
+  Message
+FROM AlertLog
+WHERE Status IN ('OPEN','ACK')
+ORDER BY OpenedAt DESC;

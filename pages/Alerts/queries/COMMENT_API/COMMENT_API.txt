@@ -1,0 +1,5 @@
+{
+  "AlertId": {{this.params.alertId}},
+  "Author": "{{appsmith.user.email}}",
+  "Comment": "{{this.params.text}}"
+}

@@ -46,11 +46,15 @@
       "isDefault": false
     },
     {
-      "id": "Hardware",
+      "id": "Alert History",
       "isDefault": false
     },
     {
-      "id": "Alert History",
+      "id": "Alerts",
+      "isDefault": false
+    },
+    {
+      "id": "Hardware",
       "isDefault": false
     },
     {

@@ -1,0 +1,4 @@
+SELECT Author, Comment, CreatedAt
+FROM AlertComment
+WHERE AlertId = {{this.params.alertId}}
+ORDER BY CreatedAt DESC;

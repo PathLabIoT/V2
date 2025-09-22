@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 11,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -67,7 +67,7 @@
   "rightColumn": 32,
   "serverSideFiltering": false,
   "sourceData": "{{ GetLabs.data.map(r => ({ label: r.Lab, value: r.Lab })) }}\n\n",
-  "topRow": 6,
+  "topRow": 4,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "y8n7vtcdsk",

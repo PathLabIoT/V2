@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 11,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -70,7 +70,7 @@
   "rightColumn": 54,
   "serverSideFiltering": false,
   "sourceData": "{{\n  [{label: \"ALL\", value: \"ALL\"}]\n    .concat((GetDepts.data || []).map(r => ({ label: r.Dept, value: r.Dept })))\n}}\n\n",
-  "topRow": 6,
+  "topRow": 4,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "j96dijj5q6",
