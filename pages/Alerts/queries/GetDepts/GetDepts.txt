@@ -1,5 +1,0 @@
-SELECT DISTINCT Dept
-FROM SensorData
-WHERE Lab = '{{ LabSelect.selectedOptionValue || "" }}'
-  AND Dept IS NOT NULL AND Dept <> ''
-ORDER BY Dept;

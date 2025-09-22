@@ -1,0 +1,56 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 27,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "pybuz2917l",
+  "leftColumn": 41,
+  "minWidth": 120,
+  "mobileBottomRow": 10,
+  "mobileLeftColumn": 49,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "onClick": "{{ AlertsActions.snooze(currentItem.SensorId, Number(SnoozeSelect.selectedOptionValue)) }}\n",
+  "parentColumnSpace": 5.21990966796875,
+  "parentId": "7gdijvubmp",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "text": "Snooze",
+  "topRow": 21,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "qvdbb3ywzz",
+  "widgetName": "BtnSnooze"
+}

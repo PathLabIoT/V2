@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "687b51105b01a1400c4091fd_a23c3dd5-3dee-4f4c-8223-68ea2f1e4596",
+  "id": "Alerts - Mobile_AlertsActions",
+  "unpublishedCollection": {
+    "name": "AlertsActions",
+    "pageId": "Alerts - Mobile",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
