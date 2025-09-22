@@ -32,7 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{showModal()}}",
+  "onClick": "{{showModal(ModalComment.name);}}",
   "originalBottomRow": 20,
   "originalTopRow": 16,
   "parentId": "nhft6cjah6",

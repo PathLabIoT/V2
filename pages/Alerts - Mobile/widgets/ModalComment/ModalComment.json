@@ -29,7 +29,7 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 240,
+      "minHeight": 260,
       "minWidth": 450,
       "mobileBottomRow": 240,
       "mobileLeftColumn": 0,
@@ -64,6 +64,7 @@
   "leftColumn": 22,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
+  "minHeight": 240,
   "mobileBottomRow": 39,
   "mobileLeftColumn": 22,
   "mobileRightColumn": 46,
@@ -80,5 +81,5 @@
   "version": 2,
   "widgetId": "3dnqr4ai6p",
   "widgetName": "ModalComment",
-  "width": 456
+  "width": 276
 }
