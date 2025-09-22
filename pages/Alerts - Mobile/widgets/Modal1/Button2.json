@@ -1,10 +1,11 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 24,
-  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "bottomRow": 22,
+  "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "SECONDARY",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
@@ -14,29 +15,20 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "pybuz2917l",
-  "leftColumn": 42,
+  "leftColumn": 47,
   "minWidth": 120,
-  "mobileBottomRow": 10,
-  "mobileLeftColumn": 49,
-  "mobileRightColumn": 64,
-  "mobileTopRow": 6,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(Modal1.name);}}",
-  "parentColumnSpace": 5.21990966796875,
-  "parentId": "7gdijvubmp",
-  "parentRowSpace": 10,
+  "parentId": "nhft6cjah6",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
@@ -47,6 +39,6 @@
   "topRow": 18,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "qvdbb3ywzz",
-  "widgetName": "BtnSnooze"
+  "widgetId": "zecgam1k2p",
+  "widgetName": "Button2"
 }
