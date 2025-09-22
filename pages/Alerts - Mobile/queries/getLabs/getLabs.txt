@@ -1,0 +1,1 @@
+SELECT DISTINCT Lab FROM Sensor WHERE Active=1 ORDER BY Lab;

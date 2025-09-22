@@ -1,7 +1,20 @@
-SELECT AlertId, SensorId, Status, OpenedAt,
-       AdjustedAtOpen, MinAtOpen, MaxAtOpen,
-       SnoozedUntil, Message
-FROM AlertLog
-WHERE Status IN ('OPEN','ACK')
-  AND (SnoozedUntil IS NULL OR SnoozedUntil < NOW())
-ORDER BY OpenedAt DESC;
+SELECT
+  a.AlertId,
+  a.SensorId,
+  a.Status,
+  a.OpenedAt,
+  a.AdjustedAtOpen,
+  a.MinAtOpen,
+  a.MaxAtOpen,
+  a.SnoozedUntil,
+  a.Message,
+  s.Lab,
+  s.Department
+FROM AlertLog a
+JOIN Sensor s
+  ON CONCAT(s.HardwareName, ':', s.LOC) = a.SensorId
+WHERE a.Status IN ('OPEN','ACK')
+  AND (a.SnoozedUntil IS NULL OR a.SnoozedUntil < NOW())
+  {{ SelectLab.selectedOptionValue ? "AND s.Lab = '" + SelectLab.selectedOptionValue + "'" : "" }}
+  {{ SelectDept.selectedOptionValue ? "AND s.Dept = '" + SelectDept.selectedOptionValue + "'" : "" }}
+ORDER BY a.OpenedAt DESC;

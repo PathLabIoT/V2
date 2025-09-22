@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT AlertId, SensorId, Status, OpenedAt,\n       AdjustedAtOpen, MinAtOpen, MaxAtOpen,\n       SnoozedUntil, Message\nFROM AlertLog\nWHERE Status IN ('OPEN','ACK')\n  AND (SnoozedUntil IS NULL OR SnoozedUntil < NOW())\nORDER BY OpenedAt DESC;\n",
+      "body": "SELECT\n  a.AlertId,\n  a.SensorId,\n  a.Status,\n  a.OpenedAt,\n  a.AdjustedAtOpen,\n  a.MinAtOpen,\n  a.MaxAtOpen,\n  a.SnoozedUntil,\n  a.Message,\n  s.Lab,\n  s.Department\nFROM AlertLog a\nJOIN Sensor s\n  ON CONCAT(s.HardwareName, ':', s.LOC) = a.SensorId\nWHERE a.Status IN ('OPEN','ACK')\n  AND (a.SnoozedUntil IS NULL OR a.SnoozedUntil < NOW())\n  {{ SelectLab.selectedOptionValue ? \"AND s.Lab = '\" + SelectLab.selectedOptionValue + \"'\" : \"\" }}\n  {{ SelectDept.selectedOptionValue ? \"AND s.Dept = '\" + SelectDept.selectedOptionValue + \"'\" : \"\" }}\nORDER BY a.OpenedAt DESC;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,7 +22,11 @@
       "name": "MariaDBIoT",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "name": "getOpenAlerts",
     "pageId": "Alerts - Mobile",
     "runBehaviour": "AUTOMATIC",
