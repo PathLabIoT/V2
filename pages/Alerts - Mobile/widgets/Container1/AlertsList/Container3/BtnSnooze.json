@@ -15,7 +15,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -33,7 +37,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(ModalPeriod.name);}}",
+  "onClick": "{{\n  Promise.all([\n    storeValue('alertId', currentItem.AlertId),\n    storeValue('sensorId', currentItem.SensorId)\n  ]).then(() => showModal('ModalPeriod'))\n}}",
   "parentColumnSpace": 5.21990966796875,
   "parentId": "7gdijvubmp",
   "parentRowSpace": 10,

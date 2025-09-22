@@ -14,6 +14,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "onSelectionChange"
+    },
+    {
+      "key": "options"
     }
   ],
   "dynamicTriggerPathList": [
@@ -41,21 +44,8 @@
   "mobileRightColumn": 40,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "onSelectionChange": "{{ storeValue('snoozeHours', RadioSnooze.selectedOptionValue) }}\n",
-  "options": [
-    {
-      "label": "12Hrs",
-      "value": "12"
-    },
-    {
-      "label": "24Hrs",
-      "value": "24"
-    },
-    {
-      "label": "48Hrs",
-      "value": "48"
-    }
-  ],
+  "onSelectionChange": "{{ storeValue('snoozeHours', RadioSnooze.selectedOptionValue) }}\n\n",
+  "options": "[\n  {\"label\":\"12 hrs\",\"value\":\"12\"},\n  {\"label\":\"24 hrs\",\"value\":\"24\"},\n  {\"label\":\"48 hrs\",\"value\":\"48\"}\n]\n",
   "originalBottomRow": 14,
   "originalTopRow": 5,
   "parentColumnSpace": 4.8125,

@@ -15,7 +15,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -33,7 +37,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(ModalComment.name);}}",
+  "onClick": "{{\n  storeValue('snoozeHours', RadioSnooze.selectedOptionValue)\n    .then(() => showModal('ModalComment'))\n}}\n\n",
   "originalBottomRow": 18,
   "originalTopRow": 14,
   "parentId": "nhft6cjah6",
