@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 17,
+  "bottomRow": 16,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -19,7 +19,7 @@
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontSize": "0.875rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
@@ -39,12 +39,12 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 40,
+  "rightColumn": 42,
   "shouldTruncate": false,
-  "text": "{{ \n  (currentItem.MinAtOpen != null ? 'Min ' + currentItem.MinAtOpen + '°C  ·  ' : '') +\n  (currentItem.MaxAtOpen != null ? 'Max ' + currentItem.MaxAtOpen + '°C' : '')\n}}\n",
+  "text": "Limits: {{ \n  (currentItem.MinAtOpen != null ? 'Min ' + currentItem.MinAtOpen + '°C  ·  ' : '') +\n  (currentItem.MaxAtOpen != null ? 'Max ' + currentItem.MaxAtOpen + '°C' : '')\n}}\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 13,
+  "topRow": 12,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
