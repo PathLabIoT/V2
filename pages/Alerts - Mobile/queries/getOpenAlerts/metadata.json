@@ -5,12 +5,12 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  AlertId,\n  SensorId,\n  Status,           -- 'OPEN' | 'ACK'\n  OpenedAt,\n  AdjustedAtOpen,\n  MinAtOpen,\n  MaxAtOpen,\n  SnoozedUntil,\n  Message\nFROM AlertLog\nWHERE Status IN ('OPEN','ACK')\nORDER BY OpenedAt DESC;\n",
+      "body": "SELECT AlertId, SensorId, Status, OpenedAt,\n       AdjustedAtOpen, MinAtOpen, MaxAtOpen,\n       SnoozedUntil, Message\nFROM AlertLog\nWHERE Status IN ('OPEN','ACK')\n  AND (SnoozedUntil IS NULL OR SnoozedUntil < NOW())\nORDER BY OpenedAt DESC;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000

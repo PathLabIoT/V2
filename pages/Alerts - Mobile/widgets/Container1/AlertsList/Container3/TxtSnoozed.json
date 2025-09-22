@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 28,
+  "bottomRow": 19,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -32,7 +32,7 @@
   "isLoading": false,
   "isVisible": "{{ !!currentItem.SnoozedUntil }}",
   "key": "2frjvhjpef",
-  "leftColumn": 0,
+  "leftColumn": 41,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -47,12 +47,12 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 38,
+  "rightColumn": 63,
   "shouldTruncate": false,
   "text": "Snoozed until {{ AlertsActions.fmtTs(currentItem.SnoozedUntil) }}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 24,
+  "topRow": 15,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n  \"AlertId\": {{this.params.alertId}},\n  \"Author\": \"{{appsmith.user.email}}\",\n  \"Comment\": \"{{this.params.text}}\"\n}\n",
+      "body": "{\n  \"AlertId\": {{ this.params.alertId }},\n  \"Author\":  \"{{ appsmith.user.email }}\",\n  \"Comment\": \"{{ this.params.text }}\"\n}\n\n",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

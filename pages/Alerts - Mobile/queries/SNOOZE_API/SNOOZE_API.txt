@@ -1,4 +1,6 @@
 {
-  "SensorId": "{{this.params.sensorId}}",
-  "seconds": {{this.params.seconds}}
+  "SensorId": "{{ this.params.sensorId }}",
+  "seconds":  {{ this.params.seconds }},
+  "AlertId":  {{ this.params.alertId }}   // so UI can hide the same row
 }
+

@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n  \"SensorId\": \"{{this.params.sensorId}}\",\n  \"seconds\": {{this.params.seconds}}\n}\n",
+      "body": "{\n  \"SensorId\": \"{{ this.params.sensorId }}\",\n  \"seconds\":  {{ this.params.seconds }},\n  \"AlertId\":  {{ this.params.alertId }}   // so UI can hide the same row\n}\n\n",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
