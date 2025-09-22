@@ -31,14 +31,14 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{closeModal(Modal1.name);}}",
-  "parentId": "nhft6cjah6",
+  "onClick": "{{closeModal(ModalComment.name);}}",
+  "parentId": "eo0p8ibfdz",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
   "rightColumn": 64,
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "o19szqsg5i",
-  "widgetName": "IconButton1"
+  "widgetId": "rge2heikge",
+  "widgetName": "IconButton2"
 }

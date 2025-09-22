@@ -1,10 +1,10 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 29,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "buttonColor": "#0891b2",
-  "buttonVariant": "PRIMARY",
+  "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
@@ -29,7 +29,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "pybuz2917l",
-  "leftColumn": 42,
+  "leftColumn": 40,
   "minWidth": 120,
   "mobileBottomRow": 10,
   "mobileLeftColumn": 49,
@@ -45,9 +45,9 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 63,
+  "rightColumn": 62,
   "text": "ACK",
-  "topRow": 8,
+  "topRow": 23,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "bo98lk0djl",

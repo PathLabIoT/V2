@@ -31,18 +31,18 @@
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "overflow": "NONE",
-  "parentId": "nhft6cjah6",
+  "parentId": "eo0p8ibfdz",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 41,
   "shouldTruncate": false,
-  "text": "Set Snooze Period\n",
+  "text": "Add Comment",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 1,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "jc9o21kmd3",
-  "widgetName": "Text18"
+  "widgetId": "xqhllkbjqh",
+  "widgetName": "Text19"
 }

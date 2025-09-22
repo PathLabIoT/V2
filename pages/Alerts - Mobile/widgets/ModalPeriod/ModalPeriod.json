@@ -1,14 +1,14 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 244,
+  "bottomRow": 294,
   "boxShadow": "none",
   "canEscapeKeyClose": true,
   "canOutsideClickClose": true,
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 240,
+      "bottomRow": 200,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -29,7 +29,7 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 240,
+      "minHeight": 186,
       "minWidth": 450,
       "mobileBottomRow": 240,
       "mobileLeftColumn": 0,
@@ -56,14 +56,16 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
-  "height": 240,
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "height": 186,
   "isCanvas": true,
   "isLoading": false,
   "key": "tgnl3yu19t",
   "leftColumn": 17,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
+  "minHeight": 290,
   "mobileBottomRow": 28,
   "mobileLeftColumn": 17,
   "mobileRightColumn": 41,
@@ -79,6 +81,6 @@
   "type": "MODAL_WIDGET",
   "version": 2,
   "widgetId": "0unmtgxfg2",
-  "widgetName": "Modal1",
-  "width": 460
+  "widgetName": "ModalPeriod",
+  "width": 250
 }
