@@ -1,9 +1,9 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 44,
+  "bottomRow": 38,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "defaultText": "Please add comment to snooze",
+  "defaultText": "..Add comment to snooze",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
@@ -25,6 +25,7 @@
   "key": "4r7w6jm20e",
   "labelAlignment": "left",
   "labelPosition": "Top",
+  "labelStyle": "",
   "labelText": "",
   "labelWidth": 5,
   "leftColumn": 0,
@@ -42,7 +43,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "topRow": 31,
+  "topRow": 28,
   "type": "RICH_TEXT_EDITOR_WIDGET",
   "version": 1,
   "widgetId": "kakq3svfsr",

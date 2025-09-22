@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 30,
+  "bottomRow": 24,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -39,12 +39,12 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 37,
+  "rightColumn": 20,
   "shouldTruncate": false,
-  "text": "{{ currentItem.Message }}",
+  "text": "{{ ((Date.now() - new Date(currentItem.OpenedAt).getTime())/60000).toFixed(0) + ' min ago' }}\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 25,
+  "topRow": 19,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

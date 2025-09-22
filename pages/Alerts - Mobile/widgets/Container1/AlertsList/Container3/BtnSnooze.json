@@ -2,9 +2,9 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 27,
-  "boxShadow": "none",
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "PRIMARY",
+  "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
@@ -30,7 +30,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "pybuz2917l",
-  "leftColumn": 41,
+  "leftColumn": 43,
   "minWidth": 120,
   "mobileBottomRow": 10,
   "mobileLeftColumn": 49,

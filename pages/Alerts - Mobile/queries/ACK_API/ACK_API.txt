@@ -1,1 +1,4 @@
-{ "AlertId": {{this.params.alertId}} }
+{
+  "AlertId": {{ this.params.alertId }}
+}
+
