@@ -1,11 +1,11 @@
 {
   "gitSyncId": "687b51105b01a1400c4091fd_7190e33c-c197-45ac-b7d6-0c6aadeef958",
-  "id": "Calibration - Audit_Query1",
+  "id": "Calibration - Audit_GetAuditHistory",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM Audit LIMIT 10;",
+      "body": "SELECT \n  a.AuditID,\n  a.SensorID,\n  s.HardwareName,\n  a.CalibrationBefore,\n  a.CalibrationAfter,\n  a.DueBefore,\n  a.DueAfter,\n  a.LastCalibBefore,\n  a.LastCalibAfter,\n  a.ReferenceValue,\n  a.MeasuredValue,\n  a.CorrectionFactor,\n  a.Passed,\n  a.PerformedAt,\n  a.PerformedBy\nFROM Audit a\nLEFT JOIN Sensor s ON a.SensorID = s.ID\nORDER BY a.PerformedAt DESC;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -23,9 +23,9 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "name": "Query1",
+    "name": "GetAuditHistory",
     "pageId": "Calibration - Audit",
-    "runBehaviour": "MANUAL",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }

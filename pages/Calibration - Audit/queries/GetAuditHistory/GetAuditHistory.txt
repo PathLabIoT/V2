@@ -1,0 +1,19 @@
+SELECT 
+  a.AuditID,
+  a.SensorID,
+  s.HardwareName,
+  a.CalibrationBefore,
+  a.CalibrationAfter,
+  a.DueBefore,
+  a.DueAfter,
+  a.LastCalibBefore,
+  a.LastCalibAfter,
+  a.ReferenceValue,
+  a.MeasuredValue,
+  a.CorrectionFactor,
+  a.Passed,
+  a.PerformedAt,
+  a.PerformedBy
+FROM Audit a
+LEFT JOIN Sensor s ON a.SensorID = s.ID
+ORDER BY a.PerformedAt DESC;
