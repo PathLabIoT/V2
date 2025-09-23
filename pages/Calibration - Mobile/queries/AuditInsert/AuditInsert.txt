@@ -1,0 +1,30 @@
+INSERT INTO `iotdb`.`Audit` (
+  SensorID,
+  CalibrationBefore, CalibrationAfter,
+  DueBefore, DueAfter,
+  LastCalibBefore, LastCalibAfter,
+  ReferenceValue, MeasuredValue, CorrectionFactor, Passed, Serial,
+  PerformedAt, PerformedBy
+)
+SELECT
+  s.ID,
+
+  -- before/after
+  s.Calibration,
+  {{ Number(CalibrationWiring.correctionValue()) }},
+  s.Due,
+  DATE(STR_TO_DATE('{{ CalibrationWiring.nextCalText() }}','%Y-%m-%d %H:%i')),
+  s.LastCalib,
+  NOW(),
+
+  -- action details
+  {{ Number(CalibrationWiring.referenceTemp()) }},
+  {{ Number(CalibrationWiring.currentTemp()) }},
+  {{ Number(CalibrationWiring.correctionValue()) }},
+  {{ ((PassFailInput.text || '').toUpperCase() === 'PASS') ? 1 : 0 }},
+  {{ "'" + (GetLatestSensorData.data?.[0]?.Serial || '').replace(/'/g,"''") + "'" }},
+
+  NOW(),
+  {{ "'" + (appsmith.user.email || appsmith.user.name || 'unknown').replace(/'/g,"''") + "'" }}
+FROM Sensor s
+WHERE s.ID = {{ Number(CalibrationWiring.hwId()) }};

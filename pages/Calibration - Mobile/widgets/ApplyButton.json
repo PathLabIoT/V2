@@ -20,6 +20,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "isDisabled"
+    },
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -39,7 +42,7 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 65,
   "needsErrorInfo": false,
-  "onClick": "{{CalibrationWiring.apply();}}",
+  "onClick": "{{\n  AuditInsert.run(\n    () => ApplyCalibration.run(\n      async () => {\n        await HardwareById.run();\n        await GetLatestSensorData.run();\n        showAlert('Calibration applied & audited ✅', 'success');\n      },\n      () => showAlert('Sensor update failed', 'error')\n    ),\n    () => showAlert('Audit insert failed', 'error')\n  )\n}}\n",
   "originalBottomRow": 67,
   "originalTopRow": 60,
   "parentColumnSpace": 23.53125,
