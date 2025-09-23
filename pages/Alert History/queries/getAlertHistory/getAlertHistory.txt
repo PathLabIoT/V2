@@ -1,0 +1,40 @@
+SET SESSION group_concat_max_len = 819200;
+
+SELECT
+  a.AlertId,
+  a.SensorId,
+  a.Status,
+  a.OpenedAt,
+  a.ClosedAt,
+  a.AdjustedAtOpen,
+  a.MinAtOpen,
+  a.MaxAtOpen,
+  a.SnoozedUntil,
+  a.Message,
+  s.Lab,
+  s.Department,
+  COUNT(c.AlertId) AS CommentCount,
+  GROUP_CONCAT(
+    CONCAT(
+      DATE_FORMAT(c.CreatedAt, '%Y-%m-%d %H:%i'),
+      ' — ',
+      c.Author,
+      ': ',
+      REPLACE(REPLACE(c.Comment, '\r',' '), '\n',' ')
+    )
+    ORDER BY c.CreatedAt ASC
+    SEPARATOR '\n'
+  ) AS CommentSummary
+FROM AlertLog a
+JOIN Sensor s
+  ON CONCAT(s.HardwareName, ':', s.LOC) = a.SensorId
+LEFT JOIN AlertComment c
+  ON c.AlertId = a.AlertId
+-- no widget filters here
+GROUP BY
+  a.AlertId, a.SensorId, a.Status, a.OpenedAt, a.ClosedAt,
+  a.AdjustedAtOpen, a.MinAtOpen, a.MaxAtOpen, a.SnoozedUntil, a.Message,
+  s.Lab, s.Department
+ORDER BY a.OpenedAt DESC
+LIMIT {{ TableAlertHistory.pageSize }}
+OFFSET {{ (TableAlertHistory.pageNo - 1) * TableAlertHistory.pageSize }};

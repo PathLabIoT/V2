@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE Sensor\nSET\n  Calibration = {{ CalibrationWiring.correctionValue() }},\n  LastCalib   = STR_TO_DATE({{ moment().format('YYYY-MM-DD HH:mm:ss') }}, '%Y-%m-%d %H:%i:%s'),\n  Due         = DATE(STR_TO_DATE({{ CalibrationWiring.nextCalText() }}, '%Y-%m-%d %H:%i'))\nWHERE ID = {{ CalibrationWiring.hwId() }};\n\n",
+      "body": "UPDATE Sensor\nSET\n  Calibration = {{ CalibrationWiring.correctionValue() }},\n  LastCalib   = STR_TO_DATE({{ moment().format('YYYY-MM-DD HH:mm:ss') }}, '%Y-%m-%d %H:%i:%s'),\n  Due         = DATE(STR_TO_DATE({{ CalibrationWiring.nextCalText() }}, '%Y-%m-%d %H:%i'))\nWHERE ID = {{ CalibrationWiring.hwId() }};\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

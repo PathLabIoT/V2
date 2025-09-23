@@ -19,9 +19,6 @@
   ],
   "dynamicPropertyPathList": [
     {
-      "key": "onClick"
-    },
-    {
       "key": "isDisabled"
     }
   ],
@@ -42,7 +39,7 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 65,
   "needsErrorInfo": false,
-  "onClick": "{{ CalibrationWiring.apply() }}",
+  "onClick": "{{CalibrationWiring.apply();}}",
   "originalBottomRow": 67,
   "originalTopRow": 60,
   "parentColumnSpace": 23.53125,

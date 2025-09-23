@@ -4,4 +4,3 @@ SET
   LastCalib   = STR_TO_DATE({{ moment().format('YYYY-MM-DD HH:mm:ss') }}, '%Y-%m-%d %H:%i:%s'),
   Due         = DATE(STR_TO_DATE({{ CalibrationWiring.nextCalText() }}, '%Y-%m-%d %H:%i'))
 WHERE ID = {{ CalibrationWiring.hwId() }};
-

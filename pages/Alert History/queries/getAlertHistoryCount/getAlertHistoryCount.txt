@@ -1,0 +1,4 @@
+SELECT COUNT(*) AS total
+FROM AlertLog a
+JOIN Sensor s
+  ON CONCAT(s.HardwareName, ':', s.LOC) = a.SensorId;

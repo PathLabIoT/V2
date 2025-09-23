@@ -46,7 +46,7 @@
       "isDefault": false
     },
     {
-      "id": "Alert History",
+      "id": "Calibration - Audit",
       "isDefault": false
     },
     {
@@ -54,11 +54,11 @@
       "isDefault": false
     },
     {
-      "id": "Hardware",
+      "id": "Alert History",
       "isDefault": false
     },
     {
-      "id": "Change Log",
+      "id": "Hardware",
       "isDefault": false
     }
   ],

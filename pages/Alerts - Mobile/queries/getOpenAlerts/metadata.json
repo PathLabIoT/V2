@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n  a.AlertId,\n  a.SensorId,\n  a.Status,\n  a.OpenedAt,\n  a.AdjustedAtOpen,\n  a.MinAtOpen,\n  a.MaxAtOpen,\n  a.SnoozedUntil,\n  a.Message,\n  s.Lab,\n  s.Department\nFROM AlertLog a\nJOIN Sensor s\n  ON CONCAT(s.HardwareName, ':', s.LOC) = a.SensorId\nWHERE a.Status IN ('OPEN','ACK')\n  AND (a.SnoozedUntil IS NULL OR a.SnoozedUntil < NOW())\n  {{ SelectLab.selectedOptionValue ? \"AND s.Lab = '\" + SelectLab.selectedOptionValue + \"'\" : \"\" }}\n  {{ SelectDept.selectedOptionValue ? \"AND s.Dept = '\" + SelectDept.selectedOptionValue + \"'\" : \"\" }}\nORDER BY a.OpenedAt DESC;\n",
+      "body": "SELECT\n  a.AlertId,\n  a.SensorId,\n  a.Status,\n  a.OpenedAt,\n  a.AdjustedAtOpen,\n  a.MinAtOpen,\n  a.MaxAtOpen,\n  a.SnoozedUntil,\n  a.Message,\n  s.Lab,\n  s.Department\nFROM AlertLog a\nJOIN Sensor s\n  ON CONCAT(s.HardwareName, ':', s.LOC) = a.SensorId\nWHERE a.Status IN ('OPEN','ACK')\n  AND (a.SnoozedUntil IS NULL OR a.SnoozedUntil < NOW())\n\n  -- Lab filter (only added when a lab is picked)\n  {{ SelectLab.selectedOptionValue\n      ? \"AND LOWER(TRIM(s.Lab)) = LOWER(TRIM('\" + SelectLab.selectedOptionValue + \"'))\"\n      : \"\" }}\n\n  -- Department filter (only added when a dept is picked)\n  {{ SelectDept.selectedOptionValue\n      ? \"AND LOWER(TRIM(s.Department)) = LOWER(TRIM('\" + SelectDept.selectedOptionValue + \"'))\"\n      : \"\" }}\n\nORDER BY a.OpenedAt DESC;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
