@@ -42,18 +42,6 @@
       "isDefault": false
     },
     {
-      "id": "Alerts - Mobile",
-      "isDefault": false
-    },
-    {
-      "id": "Dashboard - Mobile",
-      "isDefault": false
-    },
-    {
-      "id": "Calibration - Mobile",
-      "isDefault": false
-    },
-    {
       "id": "Calibration - Audit",
       "isDefault": false
     },
@@ -63,6 +51,18 @@
     },
     {
       "id": "Hardware",
+      "isDefault": false
+    },
+    {
+      "id": "Calibration - Mobile",
+      "isDefault": false
+    },
+    {
+      "id": "Dashboard - Mobile",
+      "isDefault": false
+    },
+    {
+      "id": "Alerts - Mobile",
       "isDefault": false
     }
   ],
