@@ -64,7 +64,7 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 7,
+  "rightColumn": 9,
   "serverSideFiltering": false,
   "sourceData": "{{ GetLabs.data.map(r => ({ label: r.Lab, value: r.Lab })) }}\n\n",
   "topRow": 5,
