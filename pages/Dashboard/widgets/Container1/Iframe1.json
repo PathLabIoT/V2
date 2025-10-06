@@ -35,7 +35,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 62,
-  "source": "http://192.168.1.101:3000/grafana/d/847cd1cd-7d8a-40aa-97b1-50c7159dcacd/sensorvariable?orgId=1&from=now-24h&to=now&timezone=browser&var-sensor={{ListValues.selectedItem.ID}}&refresh=5s&theme=light",
+  "source": "http://localhost:3000/d/847cd1cd-7d8a-40aa-97b1-50c7159dcacd/sensorvariable?orgId=1&from=now-24h&to=now&timezone=browser&var-sensor={{ListValues.selectedItem.ID}}&refresh=5s&theme=light",
   "topRow": 12,
   "type": "IFRAME_WIDGET",
   "version": 1,

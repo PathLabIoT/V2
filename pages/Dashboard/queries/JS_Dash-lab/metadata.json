@@ -25,7 +25,7 @@
     "fullyQualifiedName": "JS_Dash.lab",
     "name": "lab",
     "pageId": "Dashboard",
-    "runBehaviour": "MANUAL",
-    "userSetOnLoad": false
+    "runBehaviour": "ON_PAGE_LOAD",
+    "userSetOnLoad": true
   }
 }
