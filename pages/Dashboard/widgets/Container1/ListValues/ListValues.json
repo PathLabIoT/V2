@@ -118,7 +118,7 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 14,
   "needsErrorInfo": false,
-  "onItemClick": "{{ storeValue('selectedSensor', currentItem.SensorKey) }}\n",
+  "onItemClick": "{{storeValue('selectedSensor', currentItem.SensorKey)}}\n",
   "originalBottomRow": 72,
   "originalTopRow": 16,
   "pageSize": 2,
