@@ -32,7 +32,7 @@
   "pages": [
     {
       "id": "Login",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "Register",
@@ -44,7 +44,7 @@
     },
     {
       "id": "Dashboard",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "Calibration - Audit",
