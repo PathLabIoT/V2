@@ -1,3 +1,0 @@
-SELECT * FROM users
-WHERE username = '{{ResetUsernameInput.text}}'
-AND security_answer = '{{SecurityAnswerInput.text}}';

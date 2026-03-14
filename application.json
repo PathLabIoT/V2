@@ -31,18 +31,6 @@
   "evaluationVersion": 2,
   "pages": [
     {
-      "id": "Login",
-      "isDefault": false
-    },
-    {
-      "id": "Register",
-      "isDefault": false
-    },
-    {
-      "id": "Reset Password",
-      "isDefault": false
-    },
-    {
       "id": "Dashboard",
       "isDefault": true
     },
