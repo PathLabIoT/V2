@@ -3,7 +3,7 @@
   "borderOpacity": 100,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": 1,
-  "bottomRow": 122,
+  "bottomRow": 124,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "dynamicBindingPathList": [
     {
@@ -35,8 +35,8 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 20,
-  "source": "http://192.168.1.101:3000/d/847cd1cd-7d8a-40aa-97b1-50c7159dcacd/sensorvariable?orgId=1&from=now-24h&to=now&timezone=browser&var-sensor={{ListValues.selectedItem.ID}}&refresh=5s&theme=light",
-  "topRow": 43,
+  "source": "http://100.68.244.101:3000/d/847cd1cd-7d8a-40aa-97b1-50c7159dcacd/sensorvariable?orgId=1&from=now-24h&to=now&timezone=browser&var-sensor={{ListValues.selectedItem.ID}}&refresh=5s&theme=light",
+  "topRow": 45,
   "type": "IFRAME_WIDGET",
   "version": 1,
   "widgetId": "xq13cy0450",

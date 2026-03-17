@@ -121,7 +121,7 @@
   "onItemClick": "{{storeValue('selectedSensor', currentItem.SensorKey)}}\n",
   "originalBottomRow": 72,
   "originalTopRow": 16,
-  "pageSize": 3,
+  "pageSize": 4,
   "parentColumnSpace": 15.3828125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
