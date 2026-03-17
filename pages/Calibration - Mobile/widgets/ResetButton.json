@@ -31,7 +31,7 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{ !appsmith.user.email }}",
+  "isDisabled": "{{\n  !appsmith.user ||\n  !appsmith.user.email\n}}",
   "isLoading": false,
   "isVisible": true,
   "key": "2e13fnf4mk",
