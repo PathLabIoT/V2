@@ -12,17 +12,11 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "isDisabled"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "onClick"
-    },
-    {
-      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -31,7 +25,7 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{\n  appsmith.user.isAnonymous \n}}",
+  "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "2e13fnf4mk",
