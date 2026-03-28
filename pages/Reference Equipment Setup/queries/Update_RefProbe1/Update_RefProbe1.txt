@@ -1,0 +1,1 @@
+UPDATE RefProbe SET Active= '{{ProbeTable.updatedRow.Active}}' WHERE RefProbeID= '{{ProbeTable.updatedRow.RefProbeID}}';

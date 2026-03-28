@@ -1,0 +1,10 @@
+SELECT
+  *
+FROM
+  RefThermometer
+ORDER BY
+  {{ThermTable.sortOrder.column || 'RefThermID'}} {{ThermTable.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{ThermTable.pageSize}}
+OFFSET
+  {{ThermTable.pageOffset}}

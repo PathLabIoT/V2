@@ -1,0 +1,1 @@
+UPDATE RefThermometer SET Active= '{{ThermTable.updatedRow.Active}}' WHERE RefThermID= '{{ThermTable.updatedRow.RefThermID}}';

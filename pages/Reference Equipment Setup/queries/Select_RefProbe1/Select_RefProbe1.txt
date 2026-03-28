@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  RefProbe
+WHERE
+  RefProbeID LIKE '%{{ProbeTable.searchText}}%'
+ORDER BY
+  {{ProbeTable.sortOrder.column || 'RefProbeID'}} {{ProbeTable.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{ProbeTable.pageSize}}
+OFFSET
+  {{ProbeTable.pageOffset}}

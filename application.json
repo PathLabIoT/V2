@@ -57,6 +57,10 @@
     {
       "id": "Alerts - Mobile",
       "isDefault": false
+    },
+    {
+      "id": "Reference Equipment Setup",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
