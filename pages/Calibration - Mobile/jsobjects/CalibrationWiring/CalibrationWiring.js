@@ -153,6 +153,9 @@ export default {
     PassFailInput.setValue("");
     CurrentProbeInput.setValue("");
     NextCalibrationInput.setValue("");
+		
+		resetWidget("RefProbeSelect", false);
+		resetWidget("RefThermSelect", false);
 
     resetWidget("CalibrationRadio", false);
     resetWidget("TreeSelect1", false);

@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 48,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -43,7 +43,7 @@
   "mobileRightColumn": 43,
   "mobileTopRow": 38,
   "needsErrorInfo": false,
-  "optionLabel": "name",
+  "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 48,
   "originalTopRow": 41,
