@@ -1,6 +1,6 @@
 {
   "gitSyncId": "68de21089c63e65118fbf389_25a54181-373d-422e-a3eb-26b56adcbbc8",
-  "id": "Reference Equipment Setup_Select_RefThermometer1",
+  "id": "Reference Equipment_Select_RefThermometer1",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "name": "Select_RefThermometer1",
-    "pageId": "Reference Equipment Setup",
+    "pageId": "Reference Equipment",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }

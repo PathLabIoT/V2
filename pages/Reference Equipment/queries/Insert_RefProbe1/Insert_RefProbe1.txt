@@ -1,0 +1,5 @@
+INSERT INTO RefProbe (RefProbeID, Active)
+VALUES (
+  {{ "'" + ((ProbeTable.newRow || {}).RefProbeID || "").replace(/'/g, "''") + "'" }},
+  1
+);

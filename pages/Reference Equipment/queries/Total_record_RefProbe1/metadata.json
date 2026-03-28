@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "68de21089c63e65118fbf389_4c092798-d3f6-4467-a395-c821d8c8cab6",
-  "id": "Reference Equipment Setup_Update_RefThermometer1",
+  "gitSyncId": "68de21089c63e65118fbf389_669a2df8-545d-4ea3-bd87-0b4589db07d6",
+  "id": "Reference Equipment_Total_record_RefProbe1",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE RefThermometer SET Active= '{{ThermTable.updatedRow.Active}}' WHERE RefThermID= '{{ThermTable.updatedRow.RefThermID}}';",
+      "body": "SELECT COUNT(*) from RefProbe WHERE RefProbeID LIKE '%{{ProbeTable.searchText}}%';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "name": "Update_RefThermometer1",
-    "pageId": "Reference Equipment Setup",
-    "runBehaviour": "MANUAL",
+    "name": "Total_record_RefProbe1",
+    "pageId": "Reference Equipment",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

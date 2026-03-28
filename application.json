@@ -35,11 +35,11 @@
       "isDefault": true
     },
     {
-      "id": "Calibration - Audit",
+      "id": "Alert History",
       "isDefault": false
     },
     {
-      "id": "Alert History",
+      "id": "Calibration - Audit",
       "isDefault": false
     },
     {
@@ -59,7 +59,7 @@
       "isDefault": false
     },
     {
-      "id": "Reference Equipment Setup",
+      "id": "Reference Equipment",
       "isDefault": false
     }
   ],

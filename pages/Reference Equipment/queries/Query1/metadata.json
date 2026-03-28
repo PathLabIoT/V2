@@ -1,6 +1,6 @@
 {
   "gitSyncId": "68de21089c63e65118fbf389_8e9cd14b-4b05-482d-a52a-d749209ce468",
-  "id": "Reference Equipment Setup_Query1",
+  "id": "Reference Equipment_Query1",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -23,7 +23,7 @@
       "pluginId": "mysql-plugin"
     },
     "name": "Query1",
-    "pageId": "Reference Equipment Setup",
+    "pageId": "Reference Equipment",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

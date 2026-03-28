@@ -1,11 +1,11 @@
 {
   "gitSyncId": "68de21089c63e65118fbf389_03781673-7955-40a3-8773-1a28c2266aea",
-  "id": "Reference Equipment Setup_Insert_RefThermometer1",
+  "id": "Reference Equipment_Insert_RefThermometer1",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO RefThermometer (Active) VALUES ('{{(ThermTable.newRow || {}).Active}}')",
+      "body": "INSERT INTO RefThermometer (RefThermID, Active)\nVALUES (\n  {{ \"'\" + ((ThermTable.newRow || {}).RefThermID || \"\").replace(/'/g, \"''\") + \"'\" }},\n  1\n);",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "name": "Insert_RefThermometer1",
-    "pageId": "Reference Equipment Setup",
+    "pageId": "Reference Equipment",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }

@@ -1,0 +1,5 @@
+INSERT INTO RefThermometer (RefThermID, Active)
+VALUES (
+  {{ "'" + ((ThermTable.newRow || {}).RefThermID || "").replace(/'/g, "''") + "'" }},
+  1
+);

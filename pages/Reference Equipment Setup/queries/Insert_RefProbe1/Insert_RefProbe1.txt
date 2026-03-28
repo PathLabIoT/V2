@@ -1,1 +1,0 @@
-INSERT INTO RefProbe (Active) VALUES ('{{(ProbeTable.newRow || {}).Active}}')

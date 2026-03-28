@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "68de21089c63e65118fbf389_669a2df8-545d-4ea3-bd87-0b4589db07d6",
-  "id": "Reference Equipment Setup_Total_record_RefProbe1",
+  "gitSyncId": "68de21089c63e65118fbf389_3c373596-fd3f-4012-b9d3-1b0e89bf1e6f",
+  "id": "Reference Equipment_Select_RefProbe1",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT COUNT(*) from RefProbe WHERE RefProbeID LIKE '%{{ProbeTable.searchText}}%';",
+      "body": "SELECT\n  *\nFROM\n  RefProbe\nWHERE\n  RefProbeID LIKE '%{{ProbeTable.searchText}}%'\nORDER BY\n  {{ProbeTable.sortOrder.column || 'RefProbeID'}} {{ProbeTable.sortOrder.order !== \"desc\" ? \"\" : \"DESC\"}}\nLIMIT\n  {{ProbeTable.pageSize}}\nOFFSET\n  {{ProbeTable.pageOffset}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "name": "Total_record_RefProbe1",
-    "pageId": "Reference Equipment Setup",
+    "name": "Select_RefProbe1",
+    "pageId": "Reference Equipment",
     "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
