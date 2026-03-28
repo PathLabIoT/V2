@@ -1,0 +1,4 @@
+SELECT RefProbeID
+FROM RefProbe
+WHERE Active = 1
+ORDER BY RefProbeID;

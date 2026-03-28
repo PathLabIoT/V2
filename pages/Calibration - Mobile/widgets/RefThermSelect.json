@@ -1,11 +1,10 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 75,
+  "bottomRow": 41,
   "boxShadow": "none",
-  "defaultText": "{{ appsmith.store.nextCal || \"\" }}\n",
+  "defaultOptionValue": "GREEN",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,46 +13,52 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultText"
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
   "dynamicTriggerPathList": [],
-  "iconAlign": "left",
-  "inputType": "TEXT",
-  "isDisabled": true,
+  "isDisabled": false,
+  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "8kmeqn031h",
-  "label": "Next Calibration Date",
+  "key": "o8izhanyw8",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelStyle": "",
+  "labelText": "Select Ref Thermometer",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 1,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 60,
-  "mobileLeftColumn": 11,
-  "mobileRightColumn": 31,
-  "mobileTopRow": 53,
+  "mobileBottomRow": 38,
+  "mobileLeftColumn": 23,
+  "mobileRightColumn": 43,
+  "mobileTopRow": 31,
   "needsErrorInfo": false,
-  "originalBottomRow": 75,
-  "originalTopRow": 68,
+  "optionLabel": "name",
+  "optionValue": "value",
+  "originalBottomRow": 41,
+  "originalTopRow": 34,
   "parentColumnSpace": 17.9375,
   "parentId": "0",
   "parentRowSpace": 10,
+  "placeholderText": "Select option",
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 15,
-  "showStepArrows": false,
-  "topRow": 68,
-  "type": "INPUT_WIDGET_V2",
-  "version": 2,
-  "widgetId": "y50phv1usk",
-  "widgetName": "NextCalibrationInput"
+  "rightColumn": 19,
+  "serverSideFiltering": false,
+  "sourceData": "{{ GetRefThermometers.data.map(r => ({ label: r.RefThermID, value: r.RefThermID })) }}",
+  "topRow": 34,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "e3tqxyx165",
+  "widgetName": "RefThermSelect"
 }

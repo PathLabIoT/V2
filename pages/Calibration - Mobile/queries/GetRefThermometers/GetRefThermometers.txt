@@ -1,0 +1,4 @@
+SELECT RefThermID
+FROM RefThermometer
+WHERE Active = 1
+ORDER BY RefThermID;
