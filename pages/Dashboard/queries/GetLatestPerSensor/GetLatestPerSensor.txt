@@ -1,12 +1,19 @@
-SELECT sd.ID,
-       sd.Lab,
-       sd.Dept,
-       sd.Value,
-       sd.Timestamp
+SELECT 
+  sd.ID,
+  sd.device_id,
+  sd.Lab,
+  sd.Dept,
+  sd.locality,
+  sd.Value,
+  sd.Timestamp,
+  sd.wifi_signal,
+  sd.config_version,
+  sd.pam_service_version
 FROM SensorData sd
 JOIN (
-  SELECT ID,
-         MAX(`Timestamp`) AS ts
+  SELECT 
+    ID,
+    MAX(`Timestamp`) AS ts
   FROM SensorData
   WHERE '{{ LabSelect.selectedOptionValue || "" }}' <> ''
     AND Lab = '{{ LabSelect.selectedOptionValue }}'

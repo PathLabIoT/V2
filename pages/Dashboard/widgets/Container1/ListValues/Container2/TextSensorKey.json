@@ -41,7 +41,7 @@
   "parentId": "d9tgut74u4",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 42,
+  "rightColumn": 47,
   "shouldTruncate": false,
   "text": "{{ currentItem.ID || '—' }}\n",
   "textAlign": "LEFT",
