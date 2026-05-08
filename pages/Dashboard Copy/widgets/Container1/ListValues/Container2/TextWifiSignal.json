@@ -1,0 +1,61 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 16,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    },
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3gpknrz4nh",
+  "leftColumn": 32,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 34,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
+  "overflow": "NONE",
+  "parentColumnSpace": 5.3310546875,
+  "parentId": "d9tgut74u4",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 43,
+  "shouldTruncate": false,
+  "text": "{{\n  (() => {\n    const raw = currentItem.wifi_signal;\n\n    if (raw === null || raw === undefined || raw === \"\") {\n      return \"No WiFi data\";\n    }\n\n    const signal = Number(String(raw).replace(\"dBm\", \"\").trim());\n\n    if (isNaN(signal)) {\n      return \"No WiFi data\";\n    }\n\n    let rating = \"\";\n\n    if (signal >= -55) rating = \"Excellent\";\n    else if (signal >= -65) rating = \"Good\";\n    else if (signal >= -75) rating = \"Okay\";\n    else if (signal >= -85) rating = \"Poor\";\n    else rating = \"Terrible\";\n\n    return `${signal} dBm - ${rating}`;\n  })()\n}}",
+  "textAlign": "LEFT",
+  "textColor": "{{\n  (() => {\n    const raw = currentItem.wifi_signal;\n\n    if (raw === null || raw === undefined || raw === \"\") {\n      return \"#6B7280\";   // grey / no data\n    }\n\n    const signal = Number(String(raw).replace(\"dBm\", \"\").trim());\n\n    if (isNaN(signal)) {\n      return \"#6B7280\";   // grey / no data\n    }\n\n    if (signal >= -55) return \"#16A34A\";   // green\n    if (signal >= -65) return \"#84CC16\";   // yellow-green\n    if (signal >= -75) return \"#FACC15\";   // yellow\n    if (signal >= -85) return \"#F97316\";   // orange\n    return \"#DC2626\";                      // red\n  })()\n}}",
+  "topRow": 12,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "fp66pgpk89",
+  "widgetName": "TextWifiSignal"
+}

@@ -1,0 +1,4 @@
+SELECT DISTINCT Lab
+FROM SensorData
+WHERE Lab IS NOT NULL AND Lab <> ''
+ORDER BY Lab;

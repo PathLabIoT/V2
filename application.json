@@ -61,6 +61,10 @@
     {
       "id": "Reference Equipment",
       "isDefault": false
+    },
+    {
+      "id": "Dashboard Copy",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
