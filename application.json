@@ -31,8 +31,12 @@
   "evaluationVersion": 2,
   "pages": [
     {
-      "id": "Dashboard",
+      "id": "Sensor Dashboard",
       "isDefault": true
+    },
+    {
+      "id": "Dashboard",
+      "isDefault": false
     },
     {
       "id": "Alert History",
@@ -60,10 +64,6 @@
     },
     {
       "id": "Reference Equipment",
-      "isDefault": false
-    },
-    {
-      "id": "Dashboard Copy",
       "isDefault": false
     }
   ],
