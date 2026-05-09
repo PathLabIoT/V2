@@ -1,0 +1,22 @@
+SELECT 
+  sd.ID,
+  sd.device_id,
+  sd.Lab,
+  sd.Dept,
+  sd.locality,
+  sd.Value,
+  sd.Timestamp,
+  sd.wifi_signal,
+  sd.config_version,
+  sd.pam_service_version
+FROM SensorData sd
+JOIN (
+  SELECT 
+    ID,
+    MAX(`Timestamp`) AS ts
+  FROM SensorData
+  WHERE ID = '{{ appsmith.URL.queryParams.sensorId }}'
+    AND `Timestamp` >= NOW() - INTERVAL 24 HOUR
+  GROUP BY ID
+) x ON x.ID = sd.ID AND x.ts = sd.`Timestamp`
+ORDER BY sd.ID;
