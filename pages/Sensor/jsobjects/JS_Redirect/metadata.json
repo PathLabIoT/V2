@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "68de21089c63e65118fbf389_c8276e78-09fe-4000-9105-a7b000297fba",
+  "id": "Sensor_JS_Redirect",
+  "unpublishedCollection": {
+    "name": "JS_Redirect",
+    "pageId": "Sensor",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
