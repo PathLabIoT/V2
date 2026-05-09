@@ -9,12 +9,12 @@
   "animateLoading": true,
   "backgroundColor": "{{ currentItem.SensorKey === appsmith.store.selectedSensor ? \"#0b1220\" : \"\" }}\n",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 85,
+  "bottomRow": 89,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 730,
+      "bottomRow": 770,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -130,6 +130,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 61,
   "selectedItemView": "{{{}}}",
+  "serverSidePagination": false,
   "templateHeight": 160,
   "topRow": 12,
   "triggeredItemView": "{{{}}}",
