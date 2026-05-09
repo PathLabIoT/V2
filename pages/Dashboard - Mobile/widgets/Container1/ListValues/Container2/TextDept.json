@@ -11,40 +11,48 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "fontSize"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
-  "fontStyle": "",
+  "fontSize": "0.7rem",
+  "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
-  "key": "d9ltvxbmxq",
-  "leftColumn": 3,
+  "key": "3gpknrz4nh",
+  "leftColumn": 42,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
   "mobileBottomRow": 12,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 12,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 34,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
   "overflow": "NONE",
-  "parentColumnSpace": 17.82421875,
+  "parentColumnSpace": 5.3310546875,
   "parentId": "d9tgut74u4",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 10,
+  "rightColumn": 61,
   "shouldTruncate": false,
-  "text": "Current Temp:",
-  "textAlign": "CENTER",
+  "text": "{{ currentItem.Dept }}\n",
+  "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 4,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "x0664vsv23",
-  "widgetName": "Text1"
+  "widgetId": "s2udqyawhg",
+  "widgetName": "TextDept"
 }

@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 24,
   "shouldTruncate": false,
-  "text": "{{ currentItem.ID || '—' }}\n",
+  "text": "{{ String(currentItem.ID || \"\").replaceAll(\"_\", \" \") || \"—\" }}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "textStyle": "HEADING",

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 8,
+  "bottomRow": 12,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -38,13 +38,13 @@
   "responsiveBehavior": "fill",
   "rightColumn": 30,
   "shouldTruncate": false,
-  "text": "Department:",
+  "text": "Locality;",
   "textAlign": "RIGHT",
   "textColor": "#231F20",
-  "topRow": 4,
+  "topRow": 8,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "toqyitlztm",
-  "widgetName": "Text1Copy1Copy"
+  "widgetId": "9l5uvc16mb",
+  "widgetName": "LabelLocality"
 }

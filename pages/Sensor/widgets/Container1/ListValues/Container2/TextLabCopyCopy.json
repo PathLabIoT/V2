@@ -41,7 +41,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 37,
   "shouldTruncate": false,
-  "text": "{{ currentItem.locality }}\n",
+  "text": "{{ String(currentItem.locality || \"\").replaceAll(\"_\", \" \") || \"—\" }}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 8,

@@ -69,7 +69,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 54,
   "serverSideFiltering": false,
-  "sourceData": "{{\n  [{ label: \"ALL\", value: \"ALL\" }]\n    .concat(\n      (GetDepts.data || []).map(r => ({\n        label: ({ \n  IMMU: \"Immunology\",\n\tBioc: \"Biochemistry\",\n  HEMA: \"Haematology\",\n  MICRO: \"Microbiology\"\n}[r.Dept] || r.Dept),\n        value: r.Dept\n      }))\n    )\n}}\n",
+  "sourceData": "{{\n  [{ label: \"ALL\", value: \"ALL\" }]\n    .concat(\n      (GetDepts.data || []).map(r => ({\n        label: ({ \n  IMMU: \"Immunology\",\n\tBIOC: \"Biochemistry\",\n  HEMA: \"Haematology\",\n  MICRO: \"Microbiology\"\n}[r.Dept] || r.Dept),\n        value: r.Dept\n      }))\n    )\n}}\n",
   "topRow": 4,
   "type": "SELECT_WIDGET",
   "version": 1,

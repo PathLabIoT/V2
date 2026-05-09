@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 4,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -38,13 +38,13 @@
   "responsiveBehavior": "fill",
   "rightColumn": 57,
   "shouldTruncate": false,
-  "text": "Config Version:",
+  "text": "Device Id",
   "textAlign": "RIGHT",
   "textColor": "#231F20",
-  "topRow": 5,
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "zu1z2y983g",
-  "widgetName": "Text1Copy1Copy2Copy"
+  "widgetId": "umatn4hsp0",
+  "widgetName": "LabelDeviceId"
 }

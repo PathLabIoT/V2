@@ -21,7 +21,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "d9ltvxbmxq",
-  "leftColumn": 50,
+  "leftColumn": 37,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -36,15 +36,15 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 57,
+  "rightColumn": 43,
   "shouldTruncate": false,
-  "text": "Device Id",
+  "text": "Wifi Signal:",
   "textAlign": "RIGHT",
   "textColor": "#231F20",
   "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "umatn4hsp0",
-  "widgetName": "Text1Copy1Copy2"
+  "widgetId": "nifla4iaa2",
+  "widgetName": "LabelWifiSignal"
 }

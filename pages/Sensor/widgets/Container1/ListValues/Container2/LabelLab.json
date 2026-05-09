@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 4,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -21,7 +21,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "d9ltvxbmxq",
-  "leftColumn": 0,
+  "leftColumn": 23,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -36,15 +36,15 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 7,
+  "rightColumn": 30,
   "shouldTruncate": false,
-  "text": "Last Read:",
-  "textAlign": "CENTER",
+  "text": "Laboratory:",
+  "textAlign": "RIGHT",
   "textColor": "#231F20",
-  "topRow": 8,
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "2o9ct61ibw",
-  "widgetName": "Text1Copy"
+  "widgetId": "l6hxyzsgzq",
+  "widgetName": "LabelLab"
 }
