@@ -11,6 +11,9 @@
     },
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "source"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -32,7 +35,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "source": "http://100.68.244.101:3000/d-solo/adql7wj/new-dashboard?orgId=1&from=now-24h&to=now&timezone=browser&var-sensor=\"\n  + appsmith.URL.queryParams.sensorId\n  + \"&panelId=1&refresh=5s&theme=light",
+  "source": "http://100.68.244.101:3000/d/adql7wj/wifi-signal?orgId=1&from=now-24h&to=now&timezone=browser&var-sensor={{appsmith.URL.queryParams.sensorId}}&refresh=5s&viewPanel=panel-1&theme=light\n",
   "topRow": 97,
   "type": "IFRAME_WIDGET",
   "version": 1,
