@@ -35,7 +35,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "source": "http://100.68.244.101:3000/d/adql7wj/wifi-signal?orgId=1&from=now-24h&to=now&timezone=browser&var-sensor={{appsmith.URL.queryParams.sensorId}}&refresh=5s&viewPanel=panel-1&theme=light\n",
+  "source": "http://100.68.244.101:3000/d/adql7wj/wifi-signal?orgId=1&from=now-6h&to=now&timezone=browser&var-sensor={{appsmith.URL.queryParams.sensorId}}&refresh=5s&viewPanel=panel-1&theme=light\n",
   "topRow": 102,
   "type": "IFRAME_WIDGET",
   "version": 1,
