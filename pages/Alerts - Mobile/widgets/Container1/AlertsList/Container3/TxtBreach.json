@@ -51,7 +51,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 40,
   "shouldTruncate": false,
-  "text": "{{ \n  currentItem.AdjustedAtOpen > currentItem.MaxAtOpen\n    ? `Breach: HIGH ${currentItem.AdjustedAtOpen}°C > ${currentItem.MaxAtOpen}°C`\n    : `Breach: LOW ${currentItem.AdjustedAtOpen}°C < ${currentItem.MinAtOpen}°C`\n}}\n",
+  "text": "{{ \n  currentItem.AdjustedAtOpen == null\n    ? \"Breach: —\"\n    : Number(currentItem.AdjustedAtOpen) > Number(currentItem.MaxAtOpen)\n      ? `Breach: HIGH ${Number(currentItem.AdjustedAtOpen).toFixed(1)}°C > ${Number(currentItem.MaxAtOpen).toFixed(1)}°C`\n      : `Breach: LOW ${Number(currentItem.AdjustedAtOpen).toFixed(1)}°C < ${Number(currentItem.MinAtOpen).toFixed(1)}°C`\n}}\n",
   "textAlign": "LEFT",
   "textColor": "{{ currentItem.Status === \"OPEN\" ? \"#ef4444\" : \"#f59e0b\" }}",
   "textStyle": "BODY",
