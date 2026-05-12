@@ -1,20 +1,31 @@
 export default {
   // Format helpers
-  fmtTs(ts) {
-    if (!ts) return "";
-    return new Date(ts).toLocaleString();
-  },
+fmtTs(ts) {
+  if (!ts) return "";
+
+  const localTs = String(ts).replace("Z", "");
+
+  return moment(localTs).format("DD/MM/YYYY, h:mm:ss A");
+},
+
   badgeColor(status) {
     return status === "OPEN" ? "#ef4444" : "#f59e0b"; // red / amber
   },
+
   inBreachText(item) {
-    if (item.MaxAtOpen != null && item.AdjustedAtOpen > item.MaxAtOpen) {
-      return `HIGH ${item.AdjustedAtOpen}°C > ${item.MaxAtOpen}°C`;
+    const adjusted = Number(item.AdjustedAtOpen);
+    const max = Number(item.MaxAtOpen);
+    const min = Number(item.MinAtOpen);
+
+    if (item.MaxAtOpen != null && adjusted > max) {
+      return `HIGH ${adjusted.toFixed(1)}°C > ${max.toFixed(1)}°C`;
     }
-    if (item.MinAtOpen != null && item.AdjustedAtOpen < item.MinAtOpen) {
-      return `LOW ${item.AdjustedAtOpen}°C < ${item.MinAtOpen}°C`;
+
+    if (item.MinAtOpen != null && adjusted < min) {
+      return `LOW ${adjusted.toFixed(1)}°C < ${min.toFixed(1)}°C`;
     }
-    return `${item.AdjustedAtOpen}°C`;
+
+    return `${adjusted.toFixed(1)}°C`;
   },
 
   // Actions
@@ -36,13 +47,13 @@ export default {
       showAlert("Type a comment first.", "warning");
       return;
     }
+
     await COMMENT_API.run({ alertId, text });
-    // refresh comments for that alert
     await getComments.run({ alertId });
     showAlert("💬 Comment added", "success");
   },
 
-  // Load comments for a given card (called when it's expanded/selected)
+  // Load comments for a given card
   async loadComments(alertId) {
     await getComments.run({ alertId });
   }

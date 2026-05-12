@@ -39,7 +39,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 40,
+  "rightColumn": 27,
   "shouldTruncate": false,
   "text": "Limits: {{ \n  (currentItem.MinAtOpen != null ? 'Min ' + currentItem.MinAtOpen + '°C  ·  ' : '') +\n  (currentItem.MaxAtOpen != null ? 'Max ' + currentItem.MaxAtOpen + '°C' : '')\n}}\n",
   "textAlign": "LEFT",
