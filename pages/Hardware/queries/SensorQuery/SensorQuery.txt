@@ -5,7 +5,6 @@ SELECT
   Location,
   Lab,
   Department,
-  AlertEmail,
   Low,
   High,
   Units,

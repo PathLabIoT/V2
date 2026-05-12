@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE Sensor SET HardwareName= '{{Table1.updatedRow.HardwareName}}', Type= '{{Table1.updatedRow.Type}}', Location= '{{Table1.updatedRow.Location}}', Lab= '{{Table1.updatedRow.Lab}}', Department= '{{Table1.updatedRow.Department}}', AlertEmail= '{{Table1.updatedRow.AlertEmail}}', Low= '{{Table1.updatedRow.Low}}', High= '{{Table1.updatedRow.High}}', Units= '{{Table1.updatedRow.Units}}', Calibration= '{{Table1.updatedRow.Calibration}}', Due= '{{Table1.updatedRow.Due}}', Active= '{{Table1.updatedRow.Active}}' WHERE ID= '{{Table1.updatedRow.ID}}';",
+      "body": "UPDATE Sensor SET HardwareName= '{{TableHardware.updatedRow.HardwareName}}', Type= '{{TableHardware.updatedRow.Type}}', Location= '{{TableHardware.updatedRow.Location}}', Lab= '{{TableHardware.updatedRow.Lab}}', Department= '{{TableHardware.updatedRow.Department}}', AlertEmail= '{{TableHardware.updatedRow.AlertEmail}}', Low= '{{TableHardware.updatedRow.Low}}', High= '{{TableHardware.updatedRow.High}}', Units= '{{TableHardware.updatedRow.Units}}', Calibration= '{{TableHardware.updatedRow.Calibration}}', Due= '{{TableHardware.updatedRow.Due}}', Active= '{{TableHardware.updatedRow.Active}}' WHERE ID= '{{TableHardware.updatedRow.ID}}';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

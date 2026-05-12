@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n  ID,\n  HardwareName,\n  Type,\n  Location,\n  Lab,\n  Department,\n  AlertEmail,\n  Low,\n  High,\n  Units,\n  Calibration,\n  Due,\n  Active\nFROM Sensor\nORDER BY HardwareName ASC;\n",
+      "body": "SELECT \n  ID,\n  HardwareName,\n  Type,\n  Location,\n  Lab,\n  Department,\n  Low,\n  High,\n  Units,\n  Calibration,\n  Due,\n  Active\nFROM Sensor\nORDER BY HardwareName ASC;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
