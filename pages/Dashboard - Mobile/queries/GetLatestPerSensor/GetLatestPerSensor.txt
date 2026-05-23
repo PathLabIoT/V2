@@ -2,6 +2,7 @@ SELECT sd.ID,
        sd.Lab,
        sd.Dept,
        sd.Value,
+			 sd.Serial,
        sd.Timestamp
 FROM SensorData sd
 JOIN (

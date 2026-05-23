@@ -9,12 +9,12 @@
   "animateLoading": true,
   "backgroundColor": "{{ currentItem.SensorKey === appsmith.store.selectedSensor ? \"#0b1220\" : \"\" }}\n",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 45,
+  "bottomRow": 54,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 330,
+      "bottomRow": 420,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",

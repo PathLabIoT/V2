@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT sd.ID,\n       sd.Lab,\n       sd.Dept,\n       sd.Value,\n       sd.Timestamp\nFROM SensorData sd\nJOIN (\n  SELECT ID,\n         MAX(`Timestamp`) AS ts\n  FROM SensorData\n  WHERE '{{ LabSelect.selectedOptionValue || \"\" }}' <> ''\n    AND Lab = '{{ LabSelect.selectedOptionValue }}'\n    AND ('{{ DeptSelect.selectedOptionValue || \"ALL\" }}' = 'ALL'\n         OR Dept = '{{ DeptSelect.selectedOptionValue }}')\n    AND `Timestamp` >= NOW() - INTERVAL 24 HOUR\n  GROUP BY ID\n) x ON x.ID = sd.ID AND x.ts = sd.`Timestamp`\nORDER BY sd.ID;\n",
+      "body": "SELECT sd.ID,\n       sd.Lab,\n       sd.Dept,\n       sd.Value,\n\t\t\t sd.Serial,\n       sd.Timestamp\nFROM SensorData sd\nJOIN (\n  SELECT ID,\n         MAX(`Timestamp`) AS ts\n  FROM SensorData\n  WHERE '{{ LabSelect.selectedOptionValue || \"\" }}' <> ''\n    AND Lab = '{{ LabSelect.selectedOptionValue }}'\n    AND ('{{ DeptSelect.selectedOptionValue || \"ALL\" }}' = 'ALL'\n         OR Dept = '{{ DeptSelect.selectedOptionValue }}')\n    AND `Timestamp` >= NOW() - INTERVAL 24 HOUR\n  GROUP BY ID\n) x ON x.ID = sd.ID AND x.ts = sd.`Timestamp`\nORDER BY sd.ID;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
