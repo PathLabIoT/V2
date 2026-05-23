@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 16,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -28,12 +28,12 @@
   ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.75rem",
+  "fontSize": "0.8rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
   "key": "dfx8q7cist",
-  "leftColumn": 1,
+  "leftColumn": 50,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -48,14 +48,14 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "{{\n  currentItem.Timestamp\n    ? moment(currentItem.Timestamp).format(\"YYYY-MM-DD HH:mm:ss\") +\n      \" (\" + moment(currentItem.Timestamp).fromNow() + \")\"\n    : \"—\"\n}}\n\n",
+  "text": "{{\ncurrentItem.device_id\n}}\n",
   "textAlign": "CENTER",
-  "textColor": "#71717a",
+  "textColor": "#231F20",
   "textStyle": "BODY",
-  "topRow": 8,
+  "topRow": 12,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "kpkporgfd6",
-  "widgetName": "TextTimestamp"
+  "widgetId": "ouvnxgd7nt",
+  "widgetName": "TextProbeIDCopy"
 }

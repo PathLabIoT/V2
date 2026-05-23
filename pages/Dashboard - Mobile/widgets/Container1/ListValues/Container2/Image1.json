@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 8,
+  "bottomRow": 7,
   "boxShadow": "none",
   "defaultImage": "https://raw.githubusercontent.com/PathLabIoT/PAM_Assets/main/temperature%20small.png\n",
   "dynamicBindingPathList": [

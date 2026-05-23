@@ -46,7 +46,7 @@
   "parentId": "d9tgut74u4",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 48,
+  "rightColumn": 53,
   "shouldTruncate": false,
   "text": "{{ String(currentItem.ID || \"\").replaceAll(\"_\", \" \") || \"—\" }}",
   "textAlign": "LEFT",
