@@ -87,10 +87,10 @@
   ],
   "dynamicPropertyPathList": [
     {
-      "key": "onItemClick"
+      "key": "backgroundColor"
     },
     {
-      "key": "backgroundColor"
+      "key": "onItemClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -108,7 +108,7 @@
   "itemBackgroundColor": "#FFFFFF",
   "itemSpacing": 8,
   "key": "ksdltrpzqx",
-  "leftColumn": 3,
+  "leftColumn": 0,
   "listData": "{{\n  (LabSelect.selectedOptionValue)\n    ? GetLatestPerSensor.data\n    : []   // keep it empty until Lab chosen\n}}\n\n",
   "mainCanvasId": "dufh6puc03",
   "mainContainerId": "m4xd30sx3y",
@@ -128,7 +128,7 @@
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 61,
+  "rightColumn": 64,
   "selectedItemView": "{{{}}}",
   "serverSidePagination": false,
   "templateHeight": 160,

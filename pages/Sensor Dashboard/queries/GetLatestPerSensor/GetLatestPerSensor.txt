@@ -8,7 +8,8 @@ SELECT
   sd.Timestamp,
   sd.wifi_signal,
   sd.config_version,
-  sd.pam_service_version
+  sd.pam_service_version,
+	sd.Serial
 FROM SensorData sd
 JOIN (
   SELECT 
