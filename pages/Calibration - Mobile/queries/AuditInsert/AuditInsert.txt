@@ -4,6 +4,7 @@ INSERT INTO `iotdb`.`Audit` (
   DueBefore, DueAfter,
   LastCalibBefore, LastCalibAfter,
   ReferenceValue, MeasuredValue, CorrectionFactor, Passed, Serial,
+  DeviceID,
   RefThermID, RefProbeID,
   PerformedAt, PerformedBy
 )
@@ -24,6 +25,7 @@ SELECT
   {{ Number(CalibrationWiring.correctionValue()) }},
   {{ ((PassFailInput.text || '').toUpperCase() === 'PASS') ? 1 : 0 }},
   {{ "'" + (GetLatestSensorData.data?.[0]?.Serial || '').replace(/'/g,"''") + "'" }},
+  {{ "'" + (TextDevice.text || '').replace(/'/g,"''") + "'" }},
   {{ "'" + ((RefThermSelect.selectedOptionValue || '') + '').replace(/'/g,"''") + "'" }},
   {{ "'" + ((RefProbeSelect.selectedOptionValue || '') + '').replace(/'/g,"''") + "'" }},
 

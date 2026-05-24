@@ -1,4 +1,4 @@
-SELECT Serial, Value, Timestamp
+SELECT Serial, device_id, Value, Timestamp
 FROM SensorData
 WHERE ID  = '{{ HardwareById.data[0]?.HardwareName }}'
   AND Lab = '{{ HardwareById.data[0]?.LOC }}'

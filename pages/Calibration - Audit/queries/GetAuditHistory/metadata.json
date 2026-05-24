@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT \n  a.AuditID,\n  a.SensorID,\n  s.HardwareName,\n  a.CalibrationBefore,\n  a.CalibrationAfter,\n  a.DueBefore,\n  a.DueAfter,\n  a.LastCalibBefore,\n  a.LastCalibAfter,\n  a.ReferenceValue,\n  a.MeasuredValue,\n  a.CorrectionFactor,\n  a.Passed,\n  a.PerformedAt,\n  a.PerformedBy\nFROM Audit a\nLEFT JOIN Sensor s ON a.SensorID = s.ID\nORDER BY a.PerformedAt DESC;\n",
+      "body": "SELECT \n  a.AuditID,\n\ta.DeviceID,\n  a.SensorID,\n\ta.Serial,\n  s.HardwareName,\n  a.CalibrationBefore,\n  a.CalibrationAfter,\n  a.DueBefore,\n  a.DueAfter,\n  a.LastCalibBefore,\n  a.LastCalibAfter,\n  a.ReferenceValue,\n  a.MeasuredValue,\n  a.CorrectionFactor,\n  a.Passed,\n  a.PerformedAt,\n  a.PerformedBy\nFROM Audit a\nLEFT JOIN Sensor s ON a.SensorID = s.ID\nORDER BY a.PerformedAt DESC;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

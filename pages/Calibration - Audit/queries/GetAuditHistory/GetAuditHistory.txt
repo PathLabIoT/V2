@@ -1,6 +1,8 @@
 SELECT 
   a.AuditID,
+	a.DeviceID,
   a.SensorID,
+	a.Serial,
   s.HardwareName,
   a.CalibrationBefore,
   a.CalibrationAfter,
