@@ -31,7 +31,7 @@
     }
   ],
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{\n  appsmith.user.isAnonymous ||\n  !CalibrationWiring.hasValidAsset() ||\n  isNaN(CalibrationWiring.correctionValue()) ||\n  !CalibrationWiring.nextCalText() ||\n  !RefThermSelect.selectedOptionValue ||\n  !RefProbeSelect.selectedOptionValue ||\n  ApplyCalibration.isLoading ||\n  AuditInsert.isLoading\n}}",
+  "isDisabled": "{{\n  appsmith.user.isAnonymous ||\n  !CalibrationWiring.hasValidAsset() ||\n  isNaN(CalibrationWiring.correctionValue()) ||\n  !CalibrationWiring.nextCalText() ||\n  ApplyCalibration.isLoading ||\n  AuditInsert.isLoading\n}}",
   "isLoading": false,
   "isVisible": true,
   "key": "af892564f7",
