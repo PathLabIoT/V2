@@ -24,12 +24,12 @@ SELECT
   {{ Number(CalibrationWiring.currentTemp()) }},
   {{ Number(CalibrationWiring.correctionValue()) }},
   {{ ((PassFailInput.text || '').toUpperCase() === 'PASS') ? 1 : 0 }},
-  {{ "'" + (GetLatestSensorData.data?.[0]?.Serial || '').replace(/'/g,"''") + "'" }},
-  {{ "'" + (TextDevice.text || '').replace(/'/g,"''") + "'" }},
-  {{ "'" + ((RefThermSelect.selectedOptionValue || '') + '').replace(/'/g,"''") + "'" }},
-  {{ "'" + ((RefProbeSelect.selectedOptionValue || '') + '').replace(/'/g,"''") + "'" }},
+  {{ "'" + ((GetLatestSensorData.data?.[0]?.Serial || '') + '').split("'").join("''") + "'" }},
+  {{ "'" + ((TextDevice.text || '') + '').split("'").join("''") + "'" }},
+  {{ "'" + (((RefThermSelect.selectedOptionValue || '') + '')).split("'").join("''") + "'" }},
+  {{ "'" + (((RefProbeSelect.selectedOptionValue || '') + '')).split("'").join("''") + "'" }},
 
   NOW(),
-  {{ "'" + (appsmith.user.email || appsmith.user.name || 'unknown').replace(/'/g,"''") + "'" }}
+  {{ "'" + (((appsmith.user.email || appsmith.user.name || 'unknown') + '')).split("'").join("''") + "'" }}
 FROM Sensor s
 WHERE s.ID = {{ Number(CalibrationWiring.hwId()) }};
